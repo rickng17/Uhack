@@ -38,8 +38,7 @@
             android:id="@+id/text_input_layout_password_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:errorEnabled="true"
-            android:hint="password">
+            app:errorEnabled="true">
 
             <EditText
                 android:id="@+id/password_login"
