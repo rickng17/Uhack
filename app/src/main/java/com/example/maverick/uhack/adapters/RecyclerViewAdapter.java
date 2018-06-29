@@ -34,6 +34,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(PostCard holder, int position) {
         holder.tvAccountName.setText(postData.get(position).getAccountName());
+        holder.tvAccountType.setText(postData.get(position).getAccountType());
         holder.tvCapital.setText("P" + Double.toString(postData.get(position).getCapital()));
         holder.tvBalance.setText("P" + Double.toString(postData.get(position).getBalance()));
         holder.tvReturnRate.setText(Double.toString(postData.get(position).getReturnRate()) + "%");
@@ -46,7 +47,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public static class PostCard extends RecyclerView.ViewHolder{
-        TextView tvAccountName,
+        TextView tvAccountName;
+        TextView tvAccountType,
                  tvCapital,
                  tvBalance,
                  tvReturnRate,
@@ -56,6 +58,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
 
             tvAccountName = (TextView) itemView.findViewById(R.id.txtAccountName);
+            tvAccountType = (TextView) itemView.findViewById(R.id.txtAccountType);
             tvCapital = (TextView) itemView.findViewById(R.id.txtCapital);
             tvBalance = (TextView) itemView.findViewById(R.id.txtBalance);
             tvReturnRate = (TextView) itemView.findViewById(R.id.txtReturnRate);

@@ -3,6 +3,7 @@ package com.example.maverick.uhack.beans;
 public class Post {
 
     private String accountName;
+    private String accountType;
     private double capital;
     private double balance;
     private double returnRate;
@@ -11,8 +12,9 @@ public class Post {
     public Post(){
     }
 
-    public Post(String accountName, double capital, double balance, int returnDate, double returnRate){
+    public Post(String accountName, String accountType, double capital, double balance, int returnDate, double returnRate){
         this.accountName = accountName;
+        this.accountType = accountType;
         this.capital = capital;
         this.balance = balance;
         this.returnDate = returnDate;
@@ -29,6 +31,14 @@ public class Post {
 
     public double getCapital() {
         return capital;
+    }
+
+    public String getAccountType() {
+        return accountType;
+    }
+
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
     }
 
     public void setCapital(double capital) {
