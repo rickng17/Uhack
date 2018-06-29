@@ -7,12 +7,14 @@ public class Post {
     private double capital;
     private double balance;
     private double returnRate;
-    private int returnDate;
+    private String returnDate;
+    private String postDate;
 
-    public Post(){
+    public Post() {
     }
 
-    public Post(String accountName, String accountType, double capital, double balance, int returnDate, double returnRate){
+    public Post(String postDate, String accountName, String accountType, double capital, double balance, String returnDate, double returnRate) {
+        this.postDate = postDate;
         this.accountName = accountName;
         this.accountType = accountType;
         this.capital = capital;
@@ -29,16 +31,16 @@ public class Post {
         this.accountName = accountName;
     }
 
-    public double getCapital() {
-        return capital;
-    }
-
     public String getAccountType() {
         return accountType;
     }
 
     public void setAccountType(String accountType) {
         this.accountType = accountType;
+    }
+
+    public double getCapital() {
+        return capital;
     }
 
     public void setCapital(double capital) {
@@ -61,11 +63,19 @@ public class Post {
         this.returnRate = returnRate;
     }
 
-    public int getReturnDate() {
+    public String getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(int returnDate) {
+    public void setReturnDate(String returnDate) {
         this.returnDate = returnDate;
+    }
+
+    public String getPostDate() {
+        return postDate;
+    }
+
+    public void setPostDate(String postDate) {
+        this.postDate = postDate;
     }
 }
