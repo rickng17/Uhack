@@ -12,22 +12,14 @@
         android:padding="6dp">
 
         <TextView
-            android:id="@+id/txtAccountName"
-            android:layout_width="match_parent"
+            android:id="@+id/txtPostDate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Mariano Poncho"
             android:textColor="@color/colorMainDark"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="11/08/18"/>
 
-        <TextView
-            android:id="@+id/txtAccountType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="FARMER"
-            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +28,7 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/lblCapital"
+                android:id="@+id/lblNeededCapital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="4dp"
@@ -46,7 +38,7 @@
                 android:textColor="@color/colorAccent"/>
 
             <TextView
-                android:id="@+id/txtCapital"
+                android:id="@+id/txtInvestPerson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="P 50,000.00"/>

@@ -12,12 +12,12 @@ import com.example.maverick.uhack.beans.Post;
 
 import java.util.List;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.PostCard> {
+public class RecyclerViewAdapter_HomePage extends RecyclerView.Adapter<RecyclerViewAdapter_HomePage.PostCard> {
 
     private Context mContext;
     private List<Post> postData;
 
-    public RecyclerViewAdapter(Context mContext, List<Post> postData) {
+    public RecyclerViewAdapter_HomePage(Context mContext, List<Post> postData) {
         this.mContext = mContext;
         this.postData = postData;
     }
@@ -38,7 +38,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.tvCapital.setText("P" + Double.toString(postData.get(position).getCapital()));
         holder.tvBalance.setText("P" + Double.toString(postData.get(position).getBalance()));
         holder.tvReturnRate.setText(Double.toString(postData.get(position).getReturnRate()) + "%");
-        holder.tvReturnDate.setText(Integer.toString(postData.get(position).getReturnDate()));
+        holder.tvReturnDate.setText(postData.get(position).getReturnDate());
 
         if (postData.get(position).getAccountType().equals("FARMER")){
             holder.lblCapital.setText("needs");

@@ -8,13 +8,13 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.example.maverick.uhack.adapters.RecyclerViewAdapter_HomePage;
+import com.example.maverick.uhack.adapters.RecyclerViewAdapter_MyPostings;
 import com.example.maverick.uhack.beans.Post;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomePage extends AppCompatActivity {
+public class MyPostings extends AppCompatActivity {
 
     List<Post> listPost;
 
@@ -43,7 +43,7 @@ public class HomePage extends AppCompatActivity {
         listPost.add(new Post("08/19/19", "Rofi Emmanuelle Santos", "FARMER", 100000.00,90000.00, "08/19/19", 18.0));
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.postRecyclerView);
-        RecyclerViewAdapter_HomePage recyclerViewAdapter = new RecyclerViewAdapter_HomePage(this, listPost);
+        RecyclerViewAdapter_MyPostings recyclerViewAdapter = new RecyclerViewAdapter_MyPostings(this, listPost);
 
     }
 
