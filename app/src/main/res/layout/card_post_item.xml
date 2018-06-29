@@ -39,7 +39,7 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/lblOffer"
+                android:id="@+id/lblCapital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="4dp"
@@ -62,7 +62,7 @@
             android:padding="2dp">
 
             <TextView
-                android:id="@+id/lblRaised"
+                android:id="@+id/lblBalance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="4dp"

@@ -39,6 +39,20 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.tvBalance.setText("P" + Double.toString(postData.get(position).getBalance()));
         holder.tvReturnRate.setText(Double.toString(postData.get(position).getReturnRate()) + "%");
         holder.tvReturnDate.setText(Integer.toString(postData.get(position).getReturnDate()));
+
+        if (postData.get(position).getAccountType().equals("FARMER")){
+            holder.lblCapital.setText("needs");
+            holder.lblBalance.setText("raised");
+            holder.lblReturnRate.setText("gives back");
+            holder.lblReturnDate.setText("payment on");
+        }
+
+        if (postData.get(position).getAccountType().equals("INVESTOR")){
+            holder.lblCapital.setText("has");
+            holder.lblBalance.setText("invested");
+            holder.lblReturnRate.setText("return rate");
+            holder.lblReturnDate.setText("member since");
+        }
     }
 
     @Override
@@ -47,12 +61,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     public static class PostCard extends RecyclerView.ViewHolder{
-        TextView tvAccountName;
-        TextView tvAccountType,
+        TextView tvAccountName,
+                 tvAccountType,
                  tvCapital,
                  tvBalance,
                  tvReturnRate,
                  tvReturnDate;
+        TextView lblCapital,
+                 lblBalance,
+                 lblReturnRate,
+                 lblReturnDate;
 
         public PostCard(View itemView){
             super(itemView);
@@ -63,6 +81,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tvBalance = (TextView) itemView.findViewById(R.id.txtBalance);
             tvReturnRate = (TextView) itemView.findViewById(R.id.txtReturnRate);
             tvReturnDate = (TextView) itemView.findViewById(R.id.txtReturnDate);
+
+            lblCapital = (TextView) itemView.findViewById(R.id.lblCapital);
+            lblBalance = (TextView) itemView.findViewById(R.id.lblBalance);
+            lblReturnRate = (TextView) itemView.findViewById(R.id.lblReturnRate);
+            lblReturnDate = (TextView) itemView.findViewById(R.id.lblReturnDate);
         }
 
 
