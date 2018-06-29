@@ -1,17 +1,17 @@
-package com.example.maverick.uhack;
+package com.example.maverick.uhack.beans;
 
 public class Post {
 
     private String accountName;
-    private float capital;
-    private float balance;
-    private float returnRate;
-    private String returnDate;
+    private double capital;
+    private double balance;
+    private double returnRate;
+    private int returnDate;
 
     public Post(){
     }
 
-    public Post(String accountName, float capital, float balance, String returnDate, float returnRate){
+    public Post(String accountName, double capital, double balance, int returnDate, double returnRate){
         this.accountName = accountName;
         this.capital = capital;
         this.balance = balance;
@@ -27,40 +27,35 @@ public class Post {
         this.accountName = accountName;
     }
 
-    public float getCapital() {
+    public double getCapital() {
         return capital;
     }
 
-    public void setCapital(float capital) {
+    public void setCapital(double capital) {
         this.capital = capital;
     }
 
-    public float getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(float balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
-    public float getReturnRate() {
+    public double getReturnRate() {
         return returnRate;
     }
 
-    public void setReturnRate(float returnRate) {
+    public void setReturnRate(double returnRate) {
         this.returnRate = returnRate;
     }
 
-    public String getReturnDate() {
+    public int getReturnDate() {
         return returnDate;
     }
 
-    public void setReturnDate(String returnDate) {
+    public void setReturnDate(int returnDate) {
         this.returnDate = returnDate;
     }
-
-
-
-
-
 }
