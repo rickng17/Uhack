@@ -6,6 +6,82 @@
     android:layout_height="match_parent"
     tools:context="com.example.maverick.uhack.AccountActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
 
+        <TextView android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Username: "
+            android:gravity="left"
+            android:textSize="16sp"/>
+
+        <TextView android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Email: "
+            android:gravity="left"
+            android:textSize="16sp"/>
+
+        <TextView android:id="@+id/work"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Work: "
+            android:gravity="left"
+            android:textSize="16sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="change contact number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true">
+
+            <EditText android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="change password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_save"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Save"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:text="Cancel"
+            />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
