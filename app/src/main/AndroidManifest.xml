@@ -19,7 +19,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".AccountActivity"/>
-        <activity android:name=".ViewPostActivity" />
+        <activity android:name=".ViewPostFarmerActivity" />
         <activity android:name=".ViewProfileActivity" />
     </application>
 
