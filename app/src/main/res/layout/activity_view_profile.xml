@@ -33,7 +33,7 @@
             android:textSize="18dp"
             android:layout_gravity="center_horizontal"/>
         <Button
-            android:id="@+id/bt_apvPosterNumber"
+            android:id="@+id/bt_vpProfileNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
